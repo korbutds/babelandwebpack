@@ -22,6 +22,7 @@
     "@babel/plugin-transform-template-literals": "^7.13.0",
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
+    "file-loader": "^6.2.0",
     "webpack": "^5.35.1",
     "webpack-cli": "^4.6.0"
   },
