@@ -2,10 +2,11 @@
     "presets": [[
         "@babel/env",
         {
-            "targets": {
-                "edge": "18",
-                "chrome": "74"
-            }
+            "debug": true,
+            "targets": [
+                "> 0.3%",
+                "not ie > 0"
+            ]
         }
         ]],
     "plugins": ["@babel/proposal-class-properties"]

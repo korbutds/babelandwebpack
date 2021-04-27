@@ -4,12 +4,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 class App {
   constructor() {
-    _defineProperty(this, "run", async (name = `World`) => {
-      console.log(`Hello ${name}`);
+    _defineProperty(this, "run", async (name = "World") => {
+      console.log("Hello ".concat(name));
     });
   }
 
 }
 
 const app = new App();
-app.run().then(() => console.log(`done`)).catch(() => console.log(`not done`));
+app.run().then(() => console.log("done")).catch(() => console.log("not done"));
