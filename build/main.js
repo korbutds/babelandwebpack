@@ -1,17 +1,6 @@
-import "core-js/modules/es.promise.js";
-import "core-js/modules/es.array.flat.js";
+import React from 'react';
+import ReactDom from 'react-dom';
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+const App = () => /*#__PURE__*/React.createElement("h1", null, "Hello World");
 
-class App {
-  constructor() {
-    _defineProperty(this, "run", async (name = `World`) => {
-      console.log(`Hello ${name}`);
-    });
-  }
-
-}
-
-const app = new App();
-app.run().then(() => console.log(`done`)).catch(() => console.log(`not done`));
-const a = [1, 2, [3, 4]].flat();
+ReactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById(`root`));

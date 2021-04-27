@@ -1,12 +1,6 @@
-class App {
+import React from 'react';
+import ReactDom from 'react-dom';
 
-    run = async (name = `World`) => {
-        console.log(`Hello ${name}`);
-    }
-}
-const app = new App();
-app.run()
-    .then(() => console.log(`done`))
-    .catch(() => console.log(`not done`));
+const App = () => <h1>Hello World</h1>;
 
-const a = [1,2,[3,4]].flat()
+ReactDom.render(<App />, document.getElementById(`root`));
