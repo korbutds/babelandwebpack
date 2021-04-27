@@ -4,8 +4,8 @@
   "description": "Sanbox to play with Babel and webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --open",
-    "build": "webpack",
+    "start": "webpack serve",
+    "build": "webpack --env production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
