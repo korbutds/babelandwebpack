@@ -56,5 +56,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'main-[hash].css'
         })
-    ]
+    ],
+    target: "web"
 };

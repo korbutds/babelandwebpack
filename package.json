@@ -4,7 +4,8 @@
   "description": "Sanbox to play with Babel and webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
+    "start": "webpack serve --open",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -31,7 +32,8 @@
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.35.1",
-    "webpack-cli": "^4.6.0"
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "core-js": "^3.11.0",
